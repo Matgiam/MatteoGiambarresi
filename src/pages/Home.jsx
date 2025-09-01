@@ -1,13 +1,12 @@
 import "../styling/reset.css";
 import "../styling/index.css";
 import LandingScreen from "../components/LandingScreen";
+import ProjectsText from "../components/Projectstext";
 function Home() {
 	return (
 		<div>
-			<div className="wrapper">
-				<LandingScreen />
-				
-			</div>
+			<LandingScreen />
+			<ProjectsText />
 		</div>
 	);
 }
