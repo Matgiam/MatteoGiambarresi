@@ -1,9 +1,9 @@
 function ProjectsText() {
 	return (
 		<div>
-			<div className="project_text">
+			<div className="project_text" id="projects">
 				<h1>Projects</h1>
-				<p>Take a look at all the projects I have made during the past two years during my education</p>
+				<p>Take a look at all the projects I have <br /> made during the past two years <br /> during my education</p>
 			</div>
 		</div>
 	);

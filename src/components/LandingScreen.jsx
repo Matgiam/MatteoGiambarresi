@@ -16,29 +16,29 @@ function LandingScreen() {
 						<ul>
 							<li>
 								<h3>
-									<a href="#about">Projects</a>
+									<a href="#projects">Projects</a>
 								</h3>
 							</li>
 							<li>
 								<h3>
-									<a href="#about">About me</a>
+									<a href="/#about">About me</a>
 								</h3>
 							</li>
 							<li>
 								<h3>
-									<a href="#about">Contact</a>
+									<a href="/#contact">Contact</a>
 								</h3>
 							</li>
 						</ul>
 						<div className="scroll_down">
 							<h3>Scroll down</h3>
-							<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 33 33" fill="none">
+							<svg xmlns="http://www.w3.org/2000/svg" width="3vw" height="3vh" viewBox="0 0 33 33" fill="none">
 								<path
 									d="M16.5 6.875V26.125M16.5 26.125L26.125 16.5M16.5 26.125L6.875 16.5"
 									stroke="white"
-									stroke-width="4"
-									stroke-linecap="round"
-									stroke-linejoin="round"
+									strokeWidth="4"
+									strokeLinecap="round"
+									strokeLinejoin="round"
 								/>
 							</svg>
 						</div>
