@@ -113,7 +113,7 @@ img {
 
 /* ProjectsText start*/
 .project_text {
-	margin-top: 150px;
+	margin: 150px;
 	text-align: center;
 }
 /* ProjectsText end */
@@ -146,6 +146,10 @@ img {
 	100% {
 		transform: translate3d(-380%, -480%, 0) rotate(15deg);
 	}
+}
+
+.margin-bottom {
+	margin-bottom: 20rem;
 }
 .container2 {
 	overflow: hidden;
@@ -312,4 +316,8 @@ img {
 	background: #5296c9;
 	text-decoration: none;
 	font-size: 1.4vw;
+}
+
+.contact_form {
+	margin-left: 45%;
 }
