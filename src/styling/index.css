@@ -123,6 +123,7 @@ img {
 	overflow: hidden;
 	width: 100%;
 	height: 150vh;
+	margin-top: -82vh;
 }
 
 .marquee {
@@ -136,32 +137,66 @@ img {
 }
 .scroll-left .marquee {
 	display: flex;
-	animation: scroll-diagonal-left 10s linear infinite;
+	animation: scroll-diagonal-left 9s linear infinite;
 }
 @keyframes scroll-diagonal-left {
 	0% {
 		transform: translate3d(-110%, -110%, 0) rotate(15deg);
 	}
 	100% {
-		transform: translate3d(-140%, -140%, 0) rotate(15deg);
+		transform: translate3d(-180%, -110%, 0) rotate(15deg);
+	}
+}
+.container2 {
+	overflow: hidden;
+	width: 100%;
+	margin-top: -62vh;
+}
+.container3 {
+	overflow: hidden;
+	width: 100%;
+	height: 150vh;
+	margin-top: -125vh;
+}
+
+.marquee2 {
+	display: inline-block;
+	white-space: nowrap;
+}
+.marquee2 span {
+	display: inline-block;
+	padding-right: 4rem;
+	font-size: 15vw;
+}
+.scroll-left2 .marquee2 {
+	display: flex;
+	animation: scroll-diagonal-right 100s linear infinite;
+}
+@keyframes scroll-diagonal-right {
+	0% {
+		transform: translateX(0%);
+	}
+	100% {
+		transform: translateX(-500%);
 	}
 }
 /* Projects end */
 
 /* ProjectCard start */
 .rectangle {
-	width: 30vw;
-	height: 36vh;
+	width: 40vw;
+	height: 46vh;
 	background-color: #ffffff;
-	margin: 20px;
+	margin-top: 15vh;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	transition: transform 0.3s;
 	position: relative;
+	z-index: 9999;
 }
 .rectangle2 {
-	width: 30vw;
-	height: 28vh;
+	width: 40vw;
+	height: 38vh;
 	background-color: #473e3e;
 	border-radius: 10px 10px 0px 0px;
 	transition: transform 0.3s;
@@ -170,7 +205,7 @@ img {
 
 .rectangle h3 {
 	color: #000;
-	padding: 29.5vh 0px 0px 1vw;
+	padding: 39.5vh 0px 0px 1vw;
 }
 
 .rectangle h4 {
@@ -183,9 +218,16 @@ img {
 	transform: scale(1.05);
 }
 
+.absolute {
+	position: relative;
+}
+.rectangles {
+	display: flex;
+	gap: 5vw;
+}
 .rectangle-content {
 	display: flex;
-	gap: 6vw;
+	gap: 16vw;
 }
 .rectangle-content h3 {
 	font-size: 1.4vw;
@@ -200,3 +242,63 @@ img {
 }
 
 /* ProjectCard end */
+
+/* AboutMeSection start */
+.about-container {
+	margin-top: 15vh;
+	display: flex;
+	gap: 15.5vw;
+	margin-bottom: 10vh;
+}
+
+.about-content p {
+	text-align: left;
+	width: 30vw;
+}
+
+.about-content h1 {
+	margin-bottom: 3vh;
+}
+
+.rectangle3 {
+	width: 45vw;
+	border-radius: 0.5vw;
+	background-color: #5296c9;
+}
+/* AboutMeSection end */
+
+/* AboutMeSection2 start */
+.about-content2 {
+	margin-bottom: 10vh;
+}
+.about-content2 p {
+	color: #000;
+	font-size: 2vw;
+}
+
+.rectangles2 {
+	display: flex;
+	justify-content: center;
+	gap: 1vw;
+}
+.rectangle4 {
+	width: 15vw;
+	height: 25vh;
+	margin-bottom: 10vh;
+	border-radius: 0.5vw;
+	background-color: #5296c9;
+}
+/* AboutMeSection2 end */
+
+/* Foolish Minds */
+.foolish {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.foolish img {
+	max-width: 45vw;
+	border-radius: 0.5vw;
+	margin-bottom: -80px;
+	object-fit: cover;
+}

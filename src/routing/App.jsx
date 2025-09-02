@@ -7,7 +7,7 @@ function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<ProjectCard />} />
+				<Route path="/" element={<Home />} />
 			</Routes>
 		</BrowserRouter>
 	);

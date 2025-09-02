@@ -21,12 +21,12 @@ function LandingScreen() {
 							</li>
 							<li>
 								<h3>
-									<a href="/#about">About me</a>
+									<a href="#about">About me</a>
 								</h3>
 							</li>
 							<li>
 								<h3>
-									<a href="/#contact">Contact</a>
+									<a href="#contact">Contact</a>
 								</h3>
 							</li>
 						</ul>
