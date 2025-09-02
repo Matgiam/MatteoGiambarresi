@@ -10,7 +10,6 @@ function Home() {
 			<LandingScreen />
 			<ProjectsText />
 			<Projects />
-
 			<ScrollingText content=" React React React React React React React React React React React React React React React React React React" />
 		</div>
 	);

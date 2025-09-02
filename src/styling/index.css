@@ -97,10 +97,9 @@ nav ul {
 }
 
 .landing_image {
-	width: 41vw;
+	width: 42vw;
 	margin-top: -13.7vw;
 	margin-left: 22vw;
-	position: relative;
 	z-index: 1;
 }
 a {
@@ -148,3 +147,56 @@ img {
 	}
 }
 /* Projects end */
+
+/* ProjectCard start */
+.rectangle {
+	width: 30vw;
+	height: 36vh;
+	background-color: #ffffff;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s;
+	position: relative;
+}
+.rectangle2 {
+	width: 30vw;
+	height: 28vh;
+	background-color: #473e3e;
+	border-radius: 10px 10px 0px 0px;
+	transition: transform 0.3s;
+	position: relative;
+}
+
+.rectangle h3 {
+	color: #000;
+	padding: 29.5vh 0px 0px 1vw;
+}
+
+.rectangle h4 {
+	font-family: sans-serif;
+	font-size: 0.9vw;
+	color: #747474;
+	padding: 0.2vw 0 0 1vw;
+}
+.rectangle:hover {
+	transform: scale(1.05);
+}
+
+.rectangle-content {
+	display: flex;
+	gap: 6vw;
+}
+.rectangle-content h3 {
+	font-size: 1.4vw;
+	color: white;
+	border-radius: 0.3vw;
+	background: #5296c9;
+	padding: 0.4vw;
+}
+
+.view-project {
+	margin-top: -2.8vh;
+}
+
+/* ProjectCard end */
