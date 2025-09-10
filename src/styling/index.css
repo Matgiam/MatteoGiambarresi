@@ -318,6 +318,64 @@ img {
 	font-size: 1.4vw;
 }
 
+/*Contact start*/
+
 .contact_form {
-	margin-left: 45%;
+	max-width: 700px;
+	margin: 40px auto;
+	padding: 20px;
+	border-radius: 10px;
+}
+.contact_text p {
+	color: #ffffff;
+	margin-top: 3vh;
+	margin-bottom: -8vh;
+}
+.contact_text h1 {
+	padding: 150px 0 0 0;
+	color: #ffffff;
+}
+
+.contact_form input,
+.contact_form textarea {
+	width: 100%;
+	padding: 20px 0px;
+	margin-bottom: 15px;
+	border: 1px solid #fff;
+	border-radius: 6px;
+	font-size: 14px;
+}
+
+button {
+	font-family: "Bebas Neue", sans-serif;
+	padding: 0.1vw 1vw;
+	border-radius: 0.3vw;
+	color: white;
+	background: #437da8;
+	border: none;
+	text-decoration: none;
+	font-size: 1.4vw;
+	margin: 0px auto;
+	cursor: pointer;
+}
+button :hover {
+	background: #ffffff;
+}
+
+.contact {
+	height: 53vw;
+}
+/*Contact end*/
+
+/* Arrow up start */
+.arrowUp {
+	position: fixed;
+	bottom: 60px;
+	left: 30px;
+	background: #437da8;
+	padding: 15px 0px;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 1000;
+	transition: background-color 0.3s;
 }

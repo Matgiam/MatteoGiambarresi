@@ -1,5 +1,8 @@
 function Contact() {
 	return (
+		<div className="wrapper contact">
+
+		
 		<header id="contact">
 			<div className="project_text contact_text">
 				<h1>Contact</h1>
@@ -11,11 +14,12 @@ function Contact() {
 					<input type="text" placeholder="name" required></input> <br /> <br />
 					<input type="email" placeholder="email" required></input> <br /> <br />
 					<input type="text" placeholder="topic" required></input> <br /> <br />
-					<textarea rows={4} placeholder="message" required></textarea> <br /> <br />
+					<textarea rows={10} placeholder="message" required></textarea> <br /> <br />
 					<button type="submit">Send</button>
 				</form>
 			</div>
 		</header>
+		</div>
 	);
 }
 export default Contact;

@@ -3,7 +3,7 @@ function LandingScreen() {
 		<div className="wrapper">
 			<header>
 				<div className="name">
-					<h1>Matteo</h1>
+					<h1 id="home">Matteo</h1>
 				</div>
 				<div className="header-text">
 					<h2>

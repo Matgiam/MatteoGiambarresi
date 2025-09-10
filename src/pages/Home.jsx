@@ -12,10 +12,12 @@ import AboutMeSection2 from "../components/AboutMeSection2";
 import FoolishMindsText from "../components/FoolishMinds";
 import FoolishMindsFoto from "../components/FoolishMindsFoto";
 import Contact from "../components/Contact";
+import ArrowUp from "../components/arrowUp";
 function Home() {
 	return (
 		<div>
 			<LandingScreen />
+				<ArrowUp />
 			<ProjectsText />
 			<ProjectCard />
 			<ScrollingText2 content=" React React React React React React React React React React React React React React React React React React" />
