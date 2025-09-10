@@ -3,7 +3,6 @@ import "../styling/index.css";
 import LandingScreen from "../components/LandingScreen";
 import ProjectsText from "../components/Projectstext";
 import ScrollingText from "../components/ScrollingText";
-import ScrollingText2 from "../components/ScrollingText2";
 import ProjectCard from "../components/ProjectCard";
 import Projects from "../components/Projects";
 import AboutMe from "../components/AboutMe";
@@ -17,12 +16,18 @@ function Home() {
 	return (
 		<div>
 			<LandingScreen />
-				<ArrowUp />
+			<ArrowUp />
 			<ProjectsText />
 			<ProjectCard />
-			<ScrollingText2 content=" React React React React React React React React React React React React React React React React React React" />
+			<ScrollingText
+				direction="left"
+				content=" React React React React React React React React React React React React React React React React React React"
+			/>
 			<ProjectCard />
-			<ScrollingText2 content=" design design design design design design design design design design design design design design design design design design" />
+			<ScrollingText
+				direction="right"
+				content=" design design design design design design design design design design design design design design design design design design"
+			/>
 			<AboutMe />
 			<AboutMeSection />
 			<AboutMeSection2 />

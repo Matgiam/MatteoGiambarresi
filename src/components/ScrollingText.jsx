@@ -1,23 +1,33 @@
-function ScrollingText({ content }) {
+
+function ScrollingText({ content, direction = "left" }) {
 	return (
-		<div className="container">
-			<div className="scroll-left">
-				<div className="marquee">
-					<span>{content}</span>
+		<div className="margin-bottom">
+			<div className="container">
+				<div className={direction === "left" ? "scroll-left" : "scroll-right"}>
+					<div className="marquee">
+						<span>{content}</span>
+						<span>{content}</span>
+						<span>{content}</span>
+						<span>{content}</span>
+					</div>
 				</div>
-			</div>
 
-			<div className="scroll-left">
-				<div className="marquee">
-					<span>{content}</span>
-					<span>{content}</span>
+				<div className={direction === "left" ? "scroll-left" : "scroll-right"}>
+					<div className="marquee">
+						<span>{content}</span>
+						<span>{content}</span>
+						<span>{content}</span>
+						<span>{content}</span>
+					</div>
 				</div>
-			</div>
 
-			<div className="scroll-left">
-				<div className="marquee">
-					<span>{content}</span>
-					<span>{content}</span>
+				<div className={direction === "left" ? "scroll-left" : "scroll-right"}>
+					<div className="marquee">
+						<span>{content}</span>
+						<span>{content}</span>
+						<span>{content}</span>
+						<span>{content}</span>
+					</div>
 				</div>
 			</div>
 		</div>
