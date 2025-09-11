@@ -1,6 +1,10 @@
+
+import { motion } from "motion/react";
 function ArrowUp() {
 	return (
-		<div className="arrowUp">
+		<motion.div initial={{ y: 50, opacity: 0 }}
+								animate={{ y: 0, opacity: 1 }}
+								transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1], delay: 0.9 }} className="arrowUp">
 			<a href="#home">
 				<svg xmlns="http://www.w3.org/2000/svg" width="3vw" height="3vh" viewBox="0 0 33 30" fill="none">
 					<path
@@ -12,7 +16,7 @@ function ArrowUp() {
 					/>
 				</svg>
 			</a>
-		</div>
+		</motion.div>
 	);
 }
 

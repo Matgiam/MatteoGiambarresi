@@ -38,3 +38,15 @@ function Home() {
 	);
 }
 export default Home;
+
+
+
+/* To do*/
+/* 
+- Animations whole website using framer-motion
+- using real data
+- adding the images
+- adding the good content (text)
+- responsive
+- e-mail service
+*/
