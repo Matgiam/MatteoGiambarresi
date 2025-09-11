@@ -1,8 +1,7 @@
-import React from "react";
+import React, {useState}from "react";
 import { motion } from "framer-motion";
 import move from "lodash-move";
 
-// Replace these URLs with your own image URLs
 const CARD_IMAGES = [
 	"./src/assets/foolish_minds.jpg",
 	"./src/assets/stick_underground_image_1.png",
@@ -13,10 +12,10 @@ const CARD_IMAGES = [
 
 const CARD_OFFSET = 10;
 const SCALE_FACTOR = 0.06;
-const ROTATION_FACTOR = 5; // degrees for fanning
+const ROTATION_FACTOR = 5;
 
 const CardStack = () => {
-	const [cards, setCards] = React.useState(CARD_IMAGES);
+	const [cards, setCards] = useState(CARD_IMAGES);
 
 	const moveToEnd = (from) => {
 		setCards(move(cards, from, cards.length - 1));
@@ -27,8 +26,8 @@ const CardStack = () => {
 			<ul style={cardWrapStyle}>
 				{cards.map((image, index) => {
 					const canDrag = index === 0;
-					const offsetX = index * 20; // horizontal offset
-					const rotation = index * ROTATION_FACTOR; // rotation for fanning
+					const offsetX = index * 20;
+					const rotation = index * ROTATION_FACTOR;
 
 					return (
 						<motion.li
@@ -64,7 +63,6 @@ const wrapperStyle = {
 
 const cardWrapStyle = {
 	position: "relative",
-    
 };
 
 const cardStyle = {
@@ -75,4 +73,5 @@ const cardStyle = {
 	transformOrigin: "bottom right",
 };
 
+/* https://codesandbox.io/p/sandbox/card-stack-framer-motion-e0v68?file=%2Fsrc%2Findex.js%3A25%2C23-42%2C13 */
 export default CardStack;

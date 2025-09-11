@@ -221,6 +221,8 @@ img {
 
 .view-project {
 	margin-top: -2.8vh;
+	position: relative;
+	z-index: 10000000000000;
 }
 
 /* ProjectCard end */
@@ -407,11 +409,6 @@ button :hover {
 	border-radius: 0.7vw;
 }
 
-.modal_close-icon:hover {
-	background: #3e739b;
-	transition: all 0.5s;
-}
-
 .modal-content p {
 	text-align: left;
 	margin-bottom: -2vh;
@@ -424,19 +421,19 @@ button :hover {
 }
 
 .card-stack-container {
-  position: relative;
-  width: 400px;
-  height: 400px;
-  margin: auto;
-  overflow: hidden;
+	position: relative;
+	width: 400px;
+	height: 400px;
+	margin: auto;
+	overflow: hidden;
 }
 
 .card {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  cursor: grab;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
-  user-select: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	cursor: grab;
+	border-radius: 16px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+	user-select: none;
 }

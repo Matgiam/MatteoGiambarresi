@@ -1,14 +1,37 @@
+import { motion } from "motion/react";
 function FoolishMindsText() {
 	return (
 		<div>
 			<div className="project_text" id="foolishminds">
-				<h1>Foolish Minds</h1>
-				<p>
+				<motion.h1
+					initial={{ opacity: 0, y: 50 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+					viewport={{ once: false, amount: 0.2 }}
+				>
+					Foolish Minds
+				</motion.h1>
+				<motion.p
+					initial={{ opacity: 0, y: 50 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+					viewport={{ once: false, amount: 0.2 }}
+				>
 					Take a look at all the projects I have <br /> made during the past two years <br /> during my education
-				</p>
-				<div className="button">
-					<a target="_blank" href="https://vi.be/platform/FoolishMinds">Follow us</a>
-				</div>
+				</motion.p>
+
+				<motion.button
+					initial={{ opacity: 0 }}
+					whileInView={{ opacity: 1 }}
+					transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+					viewport={{ once: false, amount: 0.5 }}
+					whileHover={{ scale: 1.2 }}
+					whileTap={{ scale: 1.0 }}
+					style={{ marginTop: "1vw", cursor: "pointer" }}
+					onClick={() => window.open("https://vi.be/platform/FoolishMinds", "_blank")}
+				>
+					Follow us
+				</motion.button>
 			</div>
 		</div>
 	);

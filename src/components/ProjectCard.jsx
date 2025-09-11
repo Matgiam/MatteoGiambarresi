@@ -13,7 +13,9 @@ function ProjectCard() {
 							<div className="rectangle-content">
 								<h4>Javascript, html, css, mongoDb</h4>
 								<div className="view-project">
-									<button onClick={() => setIsOpen(true)}>View Project</button>
+									<motion.button whileHover={{ scale: 1.15 }} whileTap={{ scale: 1 }} onClick={() => setIsOpen(true)}>
+										View Project
+									</motion.button>
 								</div>
 							</div>
 						</div>
@@ -24,7 +26,9 @@ function ProjectCard() {
 							<div className="rectangle-content">
 								<h4>Javascript, html, css, mongoDb</h4>
 								<div className="view-project">
-									<button onClick={() => setIsOpen(true)}>View Project</button>
+									<motion.button whileHover={{ scale: 1.15 }} whileTap={{ scale: 1 }} onClick={() => setIsOpen(true)}>
+										View Project
+									</motion.button>
 								</div>
 							</div>
 						</div>
@@ -39,7 +43,9 @@ function ProjectCard() {
 						className="modal-content"
 						onClick={(e) => e.stopPropagation()} // prevent closing when clicking inside
 					>
-						<svg
+						<motion.svg
+							whileHover={{ scale: 1.2 }}
+							whileTap={{ scale: 1.0 }}
 							onClick={() => setIsOpen(false)}
 							xmlns="http://www.w3.org/2000/svg"
 							width="1vw"
@@ -49,7 +55,7 @@ function ProjectCard() {
 						>
 							<path d="M1 1L15 15" stroke="currentColor" strokeWidth="2" strokeLinecap="round"></path>
 							<path d="M1 15L15 1" stroke="currentColor" strokeWidth="2" strokeLinecap="round"></path>
-						</svg>
+						</motion.svg>
 						<motion.h1
 							initial={{ opacity: 0, y: 50 }}
 							whileInView={{ opacity: 1, y: 0 }}
@@ -81,11 +87,19 @@ function ProjectCard() {
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ duration: 2, ease: [0.16, 1, 0.3, 1] }}
 							viewport={{ once: false, amount: 0.2 }}
-							className="button"
 						>
-							<a target="_blank" href="https://ehb-mct.github.io/web2-course-project-front-end-MatteoGiambarresi">
-								Visit website
-							</a>
+							<motion.button
+								initial={{ opacity: 0 }}
+								whileInView={{ opacity: 1 }}
+								transition={{ duration: 0.2, ease: [0.16, 1, 0.3, 1] }}
+								viewport={{ once: false, amount: 0.5 }}
+								whileHover={{ scale: 1.2 }}
+								whileTap={{ scale: 1.0 }}
+								style={{ marginTop: "1vw", cursor: "pointer" }}
+								onClick={() => window.open("https://ehb-mct.github.io/web2-course-project-front-end-MatteoGiambarresi/index.html", "_blank")}
+							>
+								Follow us
+							</motion.button>
 						</motion.div>
 						<motion.img
 							initial={{ opacity: 0, y: 50 }}
