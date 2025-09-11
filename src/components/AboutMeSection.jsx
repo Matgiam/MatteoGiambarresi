@@ -1,5 +1,6 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import React, { useRef } from "react";
+import CardStack from "./Cardstacker";
 
 function AboutMeSection() {
 	const ref = useRef(null);
@@ -27,7 +28,7 @@ function AboutMeSection() {
 	const p2 = createParagraphAnimation(0.3, 0.5);
 	const p3 = createParagraphAnimation(0.5, 0.7);
 	const p4 = createParagraphAnimation(0.7, 0.9);
-	const p5 = createParagraphAnimation(0.85, 0.92);
+	
 
 	return (
 		<header ref={ref} className="relative">
@@ -54,12 +55,9 @@ function AboutMeSection() {
 						"exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,"" <br /> <br />
 					</motion.p>
-					<motion.p style={p5}>
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,"" <br /> <br />
-					</motion.p>
+					
 				</motion.div>
-
-				<div className="rectangle3"></div>
+				<CardStack/>
 			</div>
 		</header>
 	);

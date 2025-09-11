@@ -13,27 +13,27 @@ function AboutMeSection2() {
 				</motion.div>
 				<div className="rectangles2">
 					<motion.div
-						whileInView={{ y: [200, 0], opacity: [0, 1], rotate: [-10, 0] }}
+						whileInView={{ y: [50, 0], opacity: [0, 1], rotate: [-10, 0] }}
 						transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
 						className="rectangle4"
 					></motion.div>
 					<motion.div
-						whileInView={{ y: [300, 0], opacity: [0, 1], rotate: [-10, 0] }}
+						whileInView={{ y: [100, 0], opacity: [0, 1], rotate: [-10, 0] }}
 						transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
 						className="rectangle4"
 					></motion.div>
 					<motion.div
-						whileInView={{ y: [400, 0], opacity: [0, 1], rotate: [-10, 0] }}
+						whileInView={{ y: [150, 0], opacity: [0, 1], rotate: [-10, 0] }}
 						transition={{ duration: 0.7, ease: [0.16, 1, 0.3, 1] }}
 						className="rectangle4"
 					></motion.div>
 					<motion.div
-						whileInView={{ y: [500, 0], opacity: [0, 1], rotate: [-10, 0] }}
+						whileInView={{ y: [200, 0], opacity: [0, 1], rotate: [-10, 0] }}
 						transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
 						className="rectangle4"
 					></motion.div>
 					<motion.div
-						whileInView={{ y: [600, 0], opacity: [0, 1], rotate: [-10, 0] }}
+						whileInView={{ y: [250, 0], opacity: [0, 1], rotate: [-10, 0] }}
 						transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
 						className="rectangle4"
 					></motion.div>

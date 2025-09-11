@@ -3,6 +3,8 @@ import Home from "../pages/Home.jsx";
 import Projects from "../components/Projects.jsx";
 import LandingScreen from "../components/LandingScreen";
 import ProjectCard from "../components/ProjectCard.jsx";
+import CardStack from "../components/Cardstacker.jsx";
+import AboutMeSection from "../components/AboutMeSection.jsx";
 import { Link, Route, Routes, BrowserRouter } from "react-router";
 function App() {
 	return (
