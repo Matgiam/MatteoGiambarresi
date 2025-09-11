@@ -3,9 +3,14 @@ function AboutMeSection2() {
 	return (
 		<header>
 			<div className="about-container2">
-				<div className="about-content2">
+				<motion.div
+					whileInView={{ y: [200, 0], opacity: [0, 1] }}
+					transition={{ duration: 1.5, ease: [0.16, 1, 0.3, 1] }}
+					viewport={{ once: true, amount: 0 }}
+					className="about-content2"
+				>
 					<p>I can work with multiple tools going from coding to design to music.</p>
-				</div>
+				</motion.div>
 				<div className="rectangles2">
 					<motion.div
 						whileInView={{ y: [200, 0], opacity: [0, 1], rotate: [-10, 0] }}
