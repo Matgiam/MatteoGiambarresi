@@ -7,16 +7,8 @@ function ProjectCard() {
 		<header>
 			<div className="absolute">
 				<div className="rectangles">
-					<motion.div
-						initial={{ opacity: 0 }}
-						whileInView={{ opacity: 1 }}
-						transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-						viewport={{ once: false, amount: 0.2 }}
-						whileHover={{ scale: 1.05 }}
-						className="rectangle"
-					>
+					<motion.div whileHover={{ scale: 1.05 }} className="rectangle">
 						<div className="rectangle2">
-							
 							<h3>Stick underground</h3>
 							<div className="rectangle-content">
 								<h4>Javascript, html, css, mongoDb</h4>
@@ -26,14 +18,7 @@ function ProjectCard() {
 							</div>
 						</div>
 					</motion.div>
-					<motion.div
-						initial={{ opacity: 0 }}
-						whileInView={{ opacity: 1 }}
-						transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-						viewport={{ once: false, amount: 0.2 }}
-						whileHover={{ scale: 1.05 }}
-						className="rectangle"
-					>
+					<motion.div whileHover={{ scale: 1.05 }} className="rectangle">
 						<div className="rectangle2">
 							<h3>Stick underground</h3>
 							<div className="rectangle-content">
