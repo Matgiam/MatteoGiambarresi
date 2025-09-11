@@ -5,7 +5,6 @@ import ProjectsText from "../components/Projectstext";
 import ScrollingText from "../components/ScrollingText";
 import ProjectCard from "../components/ProjectCard";
 import Projects from "../components/Projects";
-import AboutMe from "../components/AboutMe";
 import AboutMeSection from "../components/AboutMeSection";
 import AboutMeSection2 from "../components/AboutMeSection2";
 import FoolishMindsText from "../components/FoolishMinds";
@@ -28,7 +27,7 @@ function Home() {
 				direction="right"
 				content=" design design design design design design design design design design design design design design design design design design"
 			/>
-			<AboutMe />
+			
 			<AboutMeSection />
 			<AboutMeSection2 />
 			<FoolishMindsFoto />

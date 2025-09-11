@@ -98,7 +98,7 @@ function ProjectCard() {
 								style={{ marginTop: "1vw", cursor: "pointer" }}
 								onClick={() => window.open("https://ehb-mct.github.io/web2-course-project-front-end-MatteoGiambarresi/index.html", "_blank")}
 							>
-								Follow us
+								Visit website
 							</motion.button>
 						</motion.div>
 						<motion.img

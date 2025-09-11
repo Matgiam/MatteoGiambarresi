@@ -70,7 +70,7 @@ function Contact() {
 							whileTap={{ scale: 1.0 }}
 							style={{ marginTop: "1vw", cursor: "pointer" }}
 						>
-							Follow us
+							Send
 						</motion.button>
 					</form>
 				</div>

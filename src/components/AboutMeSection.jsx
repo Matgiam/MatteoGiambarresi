@@ -28,13 +28,12 @@ function AboutMeSection() {
 	const p2 = createParagraphAnimation(0.3, 0.5);
 	const p3 = createParagraphAnimation(0.5, 0.7);
 	const p4 = createParagraphAnimation(0.7, 0.9);
-	
 
 	return (
 		<header ref={ref} className="relative">
 			<div className="about-container">
 				<motion.div style={{ scale: scaleProgress, opacity: opacityProgress }} className="about-content">
-					<h1>My story</h1>
+					<h1 id="about">My story</h1>
 
 					<motion.p style={p1}>
 						"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -55,9 +54,8 @@ function AboutMeSection() {
 						"exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
 						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,"" <br /> <br />
 					</motion.p>
-					
 				</motion.div>
-				<CardStack/>
+				<CardStack />
 			</div>
 		</header>
 	);
