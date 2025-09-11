@@ -17,6 +17,17 @@ function ProjectCard() {
 							</div>
 						</div>
 					</div>
+					<div className="rectangle">
+						<div className="rectangle2">
+							<h3>Stick underground</h3>
+							<div className="rectangle-content">
+								<h4>Javascript, html, css, mongoDb</h4>
+								<div className="view-project">
+									<button onClick={() => setIsOpen(true)}>View Projects</button>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 
