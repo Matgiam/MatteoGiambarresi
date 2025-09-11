@@ -1,11 +1,26 @@
-function ProjectsText() {
+import { motion } from "motion/react";
+
+export default function Projects() {
 	return (
-		<div>
+		<motion.div>
 			<div className="project_text" id="projects">
-				<h1>Projects</h1>
-				<p>Take a look at all the projects I have <br /> made during the past two years <br /> during my education</p>
+				<motion.h1
+					initial={{ opacity: 0, y: 50 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+					viewport={{ once: false, amount: 0.2 }}
+				>
+					Projects
+				</motion.h1>
+				<motion.p
+					initial={{ opacity: 0, y: 50 }}
+					whileInView={{ opacity: 1, y: 0 }}
+					transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
+					viewport={{ once: false, amount: 0.6 }}
+				>
+					Take a look at all the projects I have <br /> made during the past two years <br /> during my education
+				</motion.p>
 			</div>
-		</div>
+		</motion.div>
 	);
 }
-export default ProjectsText;

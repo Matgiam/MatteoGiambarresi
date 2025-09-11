@@ -196,8 +196,8 @@ img {
 	color: #747474;
 	padding: 0.2vw 0 0 1vw;
 }
-.rectangle:hover {
-	transform: scale(1.05);
+.about h1{
+	overflow: hidden;
 }
 
 .absolute {
