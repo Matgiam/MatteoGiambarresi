@@ -1,5 +1,31 @@
 import { motion } from "motion/react";
+import emailjs from "@emailjs/browser";
+import { useRef } from "react";
+
 function Contact() {
+	const form = useRef();
+
+	const sendEmail = (e) => {
+		e.preventDefault(); // prevent page reload
+
+		emailjs
+			.sendForm(
+				"service_j3sbexk", // your service ID
+				"template_9t82q8s", // your template ID
+				form.current,
+				"qFOlVk_wG5pnyDf0m" // your public key
+			)
+			.then(
+				() => {
+					alert("Email sent successfully!");
+					form.current.reset(); // clear form after success
+				},
+				(error) => {
+					alert("Failed to send email: " + error.text);
+				}
+			);
+	};
+
 	return (
 		<div className="wrapper2 contact">
 			<header id="contact">
@@ -23,42 +49,46 @@ function Contact() {
 				</div>
 
 				<div>
-					<form className="contact_form">
+					<form ref={form} className="contact_form" onSubmit={sendEmail}>
 						<motion.input
 							initial={{ opacity: 0, scale: 0.5 }}
 							whileInView={{ opacity: 1, scale: 1 }}
 							transition={{ duration: 0.3 }}
 							type="text"
-							placeholder="name"
+							placeholder="Name"
+							name="name"
 							required
-						></motion.input>{" "}
+						/>
 						<br /> <br />
 						<motion.input
 							initial={{ opacity: 0, scale: 0.5 }}
 							whileInView={{ opacity: 1, scale: 1 }}
 							transition={{ duration: 0.35 }}
 							type="email"
-							placeholder="email"
+							placeholder="Email"
+							name="email"
 							required
-						></motion.input>{" "}
+						/>
 						<br /> <br />
 						<motion.input
 							initial={{ opacity: 0, scale: 0.5 }}
 							whileInView={{ opacity: 1, scale: 1 }}
 							transition={{ duration: 0.4 }}
 							type="text"
-							placeholder="topic"
+							placeholder="Subject"
+							name="subject"
 							required
-						></motion.input>{" "}
+						/>
 						<br /> <br />
 						<motion.textarea
 							initial={{ opacity: 0, scale: 0.5 }}
 							whileInView={{ opacity: 1, scale: 1 }}
 							transition={{ duration: 0.45 }}
 							rows={10}
-							placeholder="message"
+							placeholder="Message"
+							name="message"
 							required
-						></motion.textarea>{" "}
+						/>
 						<br /> <br />
 						<motion.button
 							type="submit"
@@ -78,4 +108,5 @@ function Contact() {
 		</div>
 	);
 }
+
 export default Contact;

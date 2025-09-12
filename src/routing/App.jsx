@@ -5,12 +5,13 @@ import LandingScreen from "../components/LandingScreen";
 import ProjectCard from "../components/ProjectCard.jsx";
 import CardStack from "../components/Cardstacker.jsx";
 import AboutMeSection from "../components/AboutMeSection.jsx";
+import Contact from "../components/Contact.jsx";
 import { Link, Route, Routes, BrowserRouter } from "react-router";
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Home/>} />
+				<Route path="/" element={<Contact/>} />
 			</Routes>
 		</BrowserRouter>
 	);
