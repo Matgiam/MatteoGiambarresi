@@ -262,15 +262,14 @@ img {
 
 .rectangles2 {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
-	gap: 1vw;
+	gap:1vw;
 }
 .rectangle4 {
-	width: 15vw;
-	height: 25vh;
-	margin-bottom: 20vh;
+	width: 12vw;
+	margin-bottom: 3vh;
 	border-radius: 0.5vw;
-	background-color: #5296c9;
 }
 /* AboutMeSection2 end */
 
@@ -283,7 +282,8 @@ img {
 .foolish img {
 	max-width: 45vw;
 	border-radius: 0.5vw;
-	margin-bottom: -80px;
+	margin-top:20vh;
+	margin-bottom: -7vh;
 	object-fit: cover;
 }
 

@@ -27,7 +27,7 @@ function Home() {
 				direction="right"
 				content=" design design design design design design design design design design design design design design design design design design"
 			/>
-			
+
 			<AboutMeSection />
 			<AboutMeSection2 />
 			<FoolishMindsFoto />
@@ -38,14 +38,12 @@ function Home() {
 }
 export default Home;
 
-
-
 /* To do*/
 /* 
-- Animations whole website using framer-motion
-- using real data
+*- Animations whole website using framer-motion*
 - adding the images
 - adding the good content (text)
 - responsive
 - e-mail service
+- using real data
 */
