@@ -41,9 +41,10 @@ export default Home;
 /* To do*/
 /* 
 *- Animations whole website using framer-motion*
-- adding the images
-- adding the good content (text)
+*- adding the images*
+*- adding the good content (text)*
 - responsive
 - e-mail service
 - using real data
+
 */

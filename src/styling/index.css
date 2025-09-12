@@ -12,6 +12,12 @@ body {
 .wrapper {
 	background-color: #5296c9;
 	width: 100%;
+	position: relative;
+	z-index: 2;
+}
+.wrapper2 {
+	background-color: #5296c9;
+	width: 100%;
 }
 header {
 	width: 88vw;
@@ -356,7 +362,7 @@ button :hover {
 	padding: 1.1vh 0vw;
 	border-radius: 10vw;
 	cursor: pointer;
-	z-index: 1000000;
+	z-index: 1;
 	transition: background-color 0.3s;
 }
 

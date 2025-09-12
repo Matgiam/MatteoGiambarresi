@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 function Contact() {
 	return (
-		<div className="wrapper contact">
+		<div className="wrapper2 contact">
 			<header id="contact">
 				<div className="project_text contact_text">
 					<motion.h1
