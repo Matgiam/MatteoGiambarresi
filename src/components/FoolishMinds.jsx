@@ -17,7 +17,7 @@ function FoolishMindsText() {
 					transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
 					viewport={{ once: false, amount: 0.2 }}
 				>
-					Take a look at all the projects I have <br /> made during the past two years <br /> during my education
+					We are a rock punk band originally from Ninove. <br /> The bands startes in July 2021 when only me <br /> and my cousin where having an idea to <br />  play our favourite songs together.
 				</motion.p>
 
 				<motion.button

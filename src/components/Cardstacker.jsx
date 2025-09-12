@@ -1,13 +1,13 @@
-import React, {useState}from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import move from "lodash-move";
 
 const CARD_IMAGES = [
-	"./src/assets/foolish_minds.jpg",
-	"./src/assets/stick_underground_image_1.png",
-	"./src/assets/stick_underground_image_2.png",
-	"./src/assets/stick_underground_image_3.png",
-	"./src/assets/stick_underground_image_4.png",
+	"./src/assets/matteo_4.jpeg",
+	"./src/assets/matteo_1.jpg",
+	"./src/assets/matteo_2.png",
+	"./src/assets/matteo_3.jpeg",
+	"./src/assets/matteo_5.jpeg",
 ];
 
 const CARD_OFFSET = 10;
@@ -36,7 +36,6 @@ const CardStack = () => {
 								...cardStyle,
 								backgroundImage: `url(${image})`,
 								backgroundSize: "cover",
-								backgroundPosition: "center",
 								cursor: canDrag ? "grab" : "auto",
 							}}
 							animate={{

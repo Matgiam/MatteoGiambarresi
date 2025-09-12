@@ -28,6 +28,7 @@ function AboutMeSection() {
 	const p2 = createParagraphAnimation(0.3, 0.5);
 	const p3 = createParagraphAnimation(0.5, 0.7);
 	const p4 = createParagraphAnimation(0.7, 0.9);
+	const p5 = createParagraphAnimation(0.8, 0.95);
 
 	return (
 		<header ref={ref} className="relative">
@@ -36,23 +37,30 @@ function AboutMeSection() {
 					<h1 id="about">My story</h1>
 
 					<motion.p style={p1}>
-						"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-						minim veniam, quis nostrud <br /> <br />
+						Hey my name is Matteo Giambarresi, I am a 21 year old student at Erasmushogeschool Brussel where I study Multimedia & creative technology.{" "}
+						<br /> <br />
 					</motion.p>
 
 					<motion.p style={p2}>
-						"exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,"" <br /> <br />
+						I've learned a lot of things such as webdesign, coding, 3D-modelling, ... I fell in love with react and 3D and I would love to work in the
+						front-end industry.
+						<br /> <br />
 					</motion.p>
 
 					<motion.p style={p3}>
-						"exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,"" <br /> <br />
+						I can speak 3 languages fluently. I can speak french, dutch and english. I am a extravert, joyful, positive person who always wants to
+						bring positive energy in the environment.
+						<br /> <br />
+					</motion.p>
+					<motion.p style={p4}>
+						I know when to be serious, and I am disciplined enough to assess the work I need to complete and organize it effectively, ensuring that my
+						assignments are carried out in a clear and structured way.
+						<br /> <br />
 					</motion.p>
 
-					<motion.p style={p4}>
-						"exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,"" <br /> <br />
+					<motion.p style={p5}>
+						I am also passionate about music, I can play multiple instruments such as piano, guitar and drums. I am also in a groupe called Foolish
+						Minds where I compose music <br /> <br />
 					</motion.p>
 				</motion.div>
 				<CardStack />
