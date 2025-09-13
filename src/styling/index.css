@@ -112,10 +112,16 @@ a {
 	color: #fff;
 	text-decoration: none;
 }
-img {
+.icons img {
 	width: 100%;
+
 	border-radius: 0.5vw;
 }
+.landing_image img {
+	width: 100%;
+	display: block;
+}
+
 /* LandingScreen end*/
 
 /* ProjectsText start*/
@@ -270,7 +276,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	gap:1vw;
+	gap: 1vw;
 }
 .rectangle4 {
 	width: 12vw;
@@ -288,7 +294,7 @@ img {
 .foolish img {
 	max-width: 45vw;
 	border-radius: 0.5vw;
-	margin-top:20vh;
+	margin-top: 20vh;
 	margin-bottom: -7vh;
 	object-fit: cover;
 }
@@ -442,4 +448,51 @@ button :hover {
 	border-radius: 16px;
 	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 	user-select: none;
+}
+
+@media only screen and (max-width: 600px) {
+	.wrapper {
+		background-color: #5296c9;
+		height: 100vh;
+	}
+	header {
+		width: 90%;
+	}
+	.name h1 {
+		letter-spacing: 15.25px;
+		font-size: 25vw;
+		margin-top: 30vh;
+	}
+
+	nav {
+		display: none;
+	}
+
+	.landing_image img {
+		margin-top: 28.62vh;
+		margin-left: -30vw;
+		width: 250%;
+	}
+
+	.header-text h2 {
+		margin-left: 17vw;
+		margin-top: 10vh;
+		font-size: 4vw;
+		height: 10px;
+	}
+
+	.project_text {
+		margin-top: 5vh;
+	}
+	.project_text h1 {
+		font-size: 20vw;
+		margin-left: -15vw;
+	}
+
+	.project_text p {
+		font-size: 3.7vw;
+		width: 100vw;
+		margin-top: 1vh;
+		margin-left: -36.5vw;
+	}
 }

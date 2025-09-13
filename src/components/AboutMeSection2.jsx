@@ -11,6 +11,9 @@ function AboutMeSection2() {
 				>
 					<p>I can work with multiple tools going from coding to design to music.</p>
 				</motion.div>
+				<div className="icons">
+
+				
 				<div className="rectangles2">
 					<motion.div
 						whileInView={{ y: [50, 0], opacity: [0, 1], rotate: [-10, 0] }}
@@ -100,6 +103,7 @@ function AboutMeSection2() {
 					>
 						<img src="./src/assets/ableton_icon.webp" alt="" />
 					</motion.div>
+				</div>
 				</div>
 			</div>
 		</header>

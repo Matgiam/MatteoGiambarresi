@@ -43,8 +43,8 @@ export default Home;
 *- Animations whole website using framer-motion*
 *- adding the images*
 *- adding the good content (text)*
+*- e-mail service*
 - responsive
-- e-mail service
 - using real data
 
 */
