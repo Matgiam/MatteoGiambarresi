@@ -70,6 +70,7 @@ const cardStyle = {
 	height: "80vh",
 	borderRadius: "15px",
 	transformOrigin: "bottom right",
+	display: "none",
 };
 
 /* https://codesandbox.io/p/sandbox/card-stack-framer-motion-e0v68?file=%2Fsrc%2Findex.js%3A25%2C23-42%2C13 */

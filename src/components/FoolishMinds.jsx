@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 function FoolishMindsText() {
 	return (
 		<div>
-			<div className="project_text" id="foolishminds">
+			<div className="foolish_text" id="foolishminds">
 				<motion.h1
 					initial={{ opacity: 0, y: 50 }}
 					whileInView={{ opacity: 1, y: 0 }}
