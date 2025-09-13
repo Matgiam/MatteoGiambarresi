@@ -444,6 +444,32 @@ button :hover {
 	margin: auto;
 	overflow: hidden;
 }
+.cardstacker-wrapper {
+	position: relative;
+}
+
+.cardstacker-cardwrap {
+	position: relative;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.cardstacker-card {
+	position: absolute;
+	width: 32vw;
+	height: 80vh;
+	border-radius: 15px;
+	transform-origin: bottom right;
+	background-size: cover;
+	background-position: center;
+	display: block;
+	cursor: auto; /* default */
+}
+
+.cardstacker-card--draggable {
+	cursor: grab;
+}
 
 .card {
 	position: absolute;
@@ -648,5 +674,9 @@ button :hover {
 		max-width: 85vw;
 		max-height: 70vh;
 		border-radius: 2vw;
+	}
+
+	.cardstacker-wrapper {
+		display: none;
 	}
 }
