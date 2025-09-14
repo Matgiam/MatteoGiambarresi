@@ -85,6 +85,7 @@ nav {
 	justify-content: space-between;
 	position: relative;
 	z-index: 999;
+	margin-bottom: 2vh;
 }
 
 nav ul {
@@ -125,6 +126,11 @@ a {
 /* LandingScreen end*/
 
 /* ProjectsText start*/
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8vw;
+}
 .project_text {
 	margin: 150px;
 	text-align: center;
@@ -177,21 +183,22 @@ a {
 /* Projects end */
 
 /* ProjectCard start */
+
 .rectangle {
 	width: 40vw;
-	height: 46vh;
+	height: 48vh;
 	background-color: #ffffff;
 	margin-top: 15vh;
 	border-radius: 10px;
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	transition: transform 0.3s;
 	position: relative;
-	z-index: 9999;
+	z-index: 1;
 }
-.rectangle2 {
-	width: 40vw;
+.rectangle2 img {
+	width: 100%;
 	height: 38vh;
-	background-color: #473e3e;
+	object-fit: cover;
 	border-radius: 10px 10px 0px 0px;
 	transition: transform 0.3s;
 	position: relative;
@@ -199,7 +206,7 @@ a {
 
 .rectangle h3 {
 	color: #000;
-	padding: 39.5vh 0px 0px 1vw;
+	padding: 1.5vh 0px 0px 1vw;
 }
 
 .rectangle h4 {
@@ -386,7 +393,7 @@ button :hover {
 
 .modal {
 	position: fixed;
-	z-index: 100000;
+	z-index: 99999999999999999;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -417,6 +424,7 @@ button :hover {
 .modal-content h4 {
 	font-family: sans-serif;
 	font-size: 0.9vw;
+	margin-left: -1vw;
 	color: #747474;
 	margin-bottom: 2vh;
 }

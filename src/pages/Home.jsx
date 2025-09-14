@@ -14,20 +14,19 @@ import ArrowUp from "../components/arrowUp";
 function Home() {
 	return (
 		<div>
-
 			<LandingScreen />
 			<ArrowUp />
 			<ProjectsText />
-			<ProjectCard />
+			<Projects />
 			<ScrollingText
 				direction="left"
 				content=" React React React React React React React React React React React React React React React React React React"
 			/>
-			<ProjectCard />
+			{/* <ProjectCard />
 			<ScrollingText
 				direction="right"
 				content=" design design design design design design design design design design design design design design design design design design"
-			/>
+			/> */}
 
 			<AboutMeSection />
 			<AboutMeSection2 />
@@ -47,8 +46,13 @@ export default Home;
 *- e-mail service*
 *- responsive for mobile (first version not compatible with other widths)
 *- hamburgermenu*
+
+
+
 - navigation like shift
+
 - responsive for mobile and tablet
+
 - adding linkedin icon in contact section
 
 

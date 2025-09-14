@@ -1,40 +1,24 @@
 import React, { useState } from "react";
 import { motion } from "motion/react";
-function ProjectCard() {
+function ProjectCard(props) {
 	const [isOpen, setIsOpen] = useState(false);
 
 	return (
-		<header>
-			<div className="absolute">
-				<div className="rectangles">
-					<motion.div whileHover={{ scale: 1.05 }} className="rectangle">
-						<div className="rectangle2">
-							<h3>Stick underground</h3>
-							<div className="rectangle-content">
-								<h4>Javascript, html, css, mongoDb</h4>
-								<div className="view-project">
-									<motion.button whileHover={{ scale: 1.15 }} whileTap={{ scale: 1 }} onClick={() => setIsOpen(true)}>
-										View Project
-									</motion.button>
-								</div>
-							</div>
+		<header className="rectangle">
+			<motion.div className="rectangler">
+				<div className="rectangle2">
+					<img src={props.image} alt="" />
+					<h3>{props.name}</h3>
+					<div className="rectangle-content">
+						<h4>{props.technologies}</h4>
+						<div className="view-project">
+							<motion.button whileHover={{ scale: 1.15 }} whileTap={{ scale: 1 }} onClick={() => setIsOpen(true)}>
+								View Project
+							</motion.button>
 						</div>
-					</motion.div>
-					<motion.div whileHover={{ scale: 1.05 }} className="rectangle">
-						<div className="rectangle2">
-							<h3>Stick underground</h3>
-							<div className="rectangle-content">
-								<h4>Javascript, html, css, mongoDb</h4>
-								<div className="view-project">
-									<motion.button whileHover={{ scale: 1.15 }} whileTap={{ scale: 1 }} onClick={() => setIsOpen(true)}>
-										View Project
-									</motion.button>
-								</div>
-							</div>
-						</div>
-					</motion.div>
+					</div>
 				</div>
-			</div>
+			</motion.div>
 
 			{/* Modal */}
 			{isOpen && (
@@ -62,7 +46,7 @@ function ProjectCard() {
 							transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
 							viewport={{ once: false, amount: 0.2 }}
 						>
-							Stick underground
+							{props.name}
 						</motion.h1>
 						<motion.h4
 							initial={{ opacity: 0, y: 50 }}
@@ -70,7 +54,7 @@ function ProjectCard() {
 							transition={{ duration: 1.2, ease: [0.16, 1, 0.3, 1] }}
 							viewport={{ once: false, amount: 0.2 }}
 						>
-							Javascript, html, css, mongoDb
+							{props.technologies}
 						</motion.h4>
 						<motion.p
 							initial={{ opacity: 0, y: 50 }}
@@ -78,8 +62,7 @@ function ProjectCard() {
 							transition={{ duration: 1.6, ease: [0.16, 1, 0.3, 1] }}
 							viewport={{ once: false, amount: 0.2 }}
 						>
-							{" "}
-							Stick Underground is a website for drummers of all levels and to help them find their drumsticks adapted to their needs.
+							{props.content}
 						</motion.p>
 						<br />
 						<motion.div
@@ -96,7 +79,7 @@ function ProjectCard() {
 								whileHover={{ scale: 1.2 }}
 								whileTap={{ scale: 1.0 }}
 								style={{ marginTop: "1vw", cursor: "pointer" }}
-								onClick={() => window.open("https://ehb-mct.github.io/web2-course-project-front-end-MatteoGiambarresi/index.html", "_blank")}
+								onClick={() => window.open(props.link, "_blank")}
 							>
 								Visit website
 							</motion.button>
@@ -106,7 +89,7 @@ function ProjectCard() {
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ duration: 2.4, ease: [0.16, 1, 0.3, 1] }}
 							viewport={{ once: false, amount: 0.2 }}
-							src="./src/assets/stick_underground_image_1.png"
+							src={props.image}
 							alt="Foolish Minds"
 						/>
 						<motion.img
@@ -114,7 +97,7 @@ function ProjectCard() {
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ duration: 2.4, ease: [0.16, 1, 0.3, 1] }}
 							viewport={{ once: false, amount: 0.2 }}
-							src="./src/assets/stick_underground_image_2.png"
+							src={props.extra1}
 							alt="Foolish Minds"
 						/>
 						<motion.img
@@ -122,7 +105,7 @@ function ProjectCard() {
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ duration: 2.4, ease: [0.16, 1, 0.3, 1] }}
 							viewport={{ once: false, amount: 0.2 }}
-							src="./src/assets/stick_underground_image_3.png"
+							src={props.extra2}
 							alt="Foolish Minds"
 						/>
 						<motion.img
@@ -130,7 +113,7 @@ function ProjectCard() {
 							whileInView={{ opacity: 1, y: 0 }}
 							transition={{ duration: 2.4, ease: [0.16, 1, 0.3, 1] }}
 							viewport={{ once: false, amount: 0.2 }}
-							src="./src/assets/stick_underground_image_4.png"
+							src={props.extra3}
 							alt="Foolish Minds"
 						/>
 					</div>
