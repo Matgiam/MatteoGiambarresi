@@ -217,6 +217,8 @@ a {
 }
 .rectangles {
 	display: flex;
+	position: relative;
+	z-index: 1;
 	gap: 5vw;
 }
 .rectangle-content {
@@ -480,6 +482,97 @@ button :hover {
 	user-select: none;
 }
 
+/* Hamburgermenu */
+
+/* Animate into an "X" */
+.hamburger.open span:nth-child(1) {
+	transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.open span:nth-child(2) {
+	opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+	transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* Dropdown Menu */
+
+.menu a {
+	padding: 10px;
+	z-index: 9999999;
+	text-decoration: none;
+	color: #ffffff;
+	transition: background 0.2s;
+}
+
+.menu a:hover {
+	background: #366284;
+	border-radius: 4px;
+}
+
+/* Container (no z-index here) */
+.mobile-menu {
+	position: relative;
+	/* remove z-index here */
+}
+
+/* Hamburger Button */
+.hamburger {
+	position: fixed;
+	top: 15px;
+	right: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 30px;
+	height: 22px;
+	background: none;
+	border: none;
+	cursor: pointer;
+	z-index: 10000; /* enough to stay on top */
+}
+
+.hamburger span {
+	display: block;
+	height: 3px;
+	width: 160%;
+	background: #000;
+	border-radius: 2px;
+	transition: 0.3s ease;
+}
+
+/* Dropdown Menu */
+.menu {
+	display: none;
+	position: fixed;
+	top: 60px;
+	right: 15px;
+	width: 180px;
+	background: #437da8;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+	border-radius: 8px;
+	font-size: 5.7vw;
+	text-align: center;
+	flex-direction: column;
+	z-index: 99999; /* works now */
+}
+
+.menu.show {
+	display: flex;
+}
+
+@media (max-width: 768px) {
+	.mobile-menu {
+		display: block;
+	}
+}
+@media (min-width: 769px) {
+	.mobile-menu {
+		display: none;
+	}
+}
+/*Hamburger menu end */
+
 @media only screen and (max-width: 600px) {
 	.wrapper {
 		background-color: #5296c9;
@@ -700,7 +793,7 @@ button :hover {
 		border-radius: 2vw;
 	}
 
-	.contact_text p{
+	.contact_text p {
 		margin-bottom: 10vh;
 	}
 }

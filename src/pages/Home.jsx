@@ -14,6 +14,7 @@ import ArrowUp from "../components/arrowUp";
 function Home() {
 	return (
 		<div>
+
 			<LandingScreen />
 			<ArrowUp />
 			<ProjectsText />

@@ -1,9 +1,10 @@
 import { motion } from "motion/react";
-
+import MobileMenu from "./Menu";
 function LandingScreen() {
 	return (
 		<div className="wrapper">
 			<header>
+				<MobileMenu></MobileMenu>
 				<div className="name">
 					<div className="flex">
 						<motion.h1

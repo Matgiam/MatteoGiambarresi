@@ -6,12 +6,13 @@ import ProjectCard from "../components/ProjectCard.jsx";
 import CardStack from "../components/Cardstacker.jsx";
 import AboutMeSection from "../components/AboutMeSection.jsx";
 import Contact from "../components/Contact.jsx";
+import MobileMenu from "../components/Menu.jsx";
 import { Link, Route, Routes, BrowserRouter } from "react-router";
 function App() {
 	return (
 		<BrowserRouter>
 			<Routes>
-				<Route path="/" element={<Home/>} />
+				<Route path="/" element={<Home />} />
 			</Routes>
 		</BrowserRouter>
 	);
