@@ -46,10 +46,13 @@ export default Home;
 *- adding the good content (text)*
 *- e-mail service*
 *- responsive for mobile (first version not compatible with other widths)
-- hamburgermenu
+*- hamburgermenu*
 - navigation like shift
 - responsive for mobile and tablet
 - adding linkedin icon in contact section
+
+
+
 - using real data
 
 */

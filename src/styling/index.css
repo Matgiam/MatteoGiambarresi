@@ -239,6 +239,12 @@ a {
 	z-index: 10000000000000;
 }
 
+img {
+	border-radius: 0.8vw;
+}
+.modal-content img {
+	width: 100%;
+}
 /* ProjectCard end */
 
 /* AboutMeSection start */
