@@ -145,6 +145,8 @@ a {
 .container {
 	overflow: hidden;
 	width: 100%;
+	z-index: -5;
+	position: relative;
 	margin-top: -62vh;
 }
 .marquee {
@@ -193,7 +195,6 @@ a {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 	transition: transform 0.3s;
 	position: relative;
-	z-index: 1;
 }
 .rectangle2 img {
 	width: 100%;
@@ -243,7 +244,7 @@ a {
 .view-project {
 	margin-top: -2.8vh;
 	position: relative;
-	z-index: 10000000000000;
+	z-index: 10000;
 }
 
 img {
@@ -260,6 +261,11 @@ img {
 	display: flex;
 	gap: 15.5vw;
 	margin-bottom: 18vh;
+}
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent; /* optional: make scrollbar track transparent */
 }
 
 .about-content p {
@@ -327,6 +333,7 @@ img {
 	background: #5296c9;
 	text-decoration: none;
 	font-size: 1.4vw;
+	position: relative;
 }
 
 /*Contact start*/
@@ -350,11 +357,12 @@ img {
 .contact_form input,
 .contact_form textarea {
 	width: 100%;
-	padding: 20px 0px;
+	padding: 20px 10px;
 	margin-bottom: 15px;
 	border: 1px solid #fff;
 	border-radius: 6px;
 	font-size: 14px;
+	font-family: sans-serif;
 }
 
 button {
@@ -368,6 +376,8 @@ button {
 	font-size: 1.4vw;
 	margin: 0px auto;
 	cursor: pointer;
+	position: relative;
+	z-index: 1;
 }
 button :hover {
 	background: #ffffff;
@@ -393,7 +403,7 @@ button :hover {
 
 .modal {
 	position: fixed;
-	z-index: 99999999999999999;
+	z-index: 99999999999;
 	left: 0;
 	top: 0;
 	width: 100%;
@@ -401,7 +411,7 @@ button :hover {
 	overflow: auto;
 	background-color: rgba(0, 0, 0, 0.4);
 	backdrop-filter: blur(20px);
-	-webkit-backdrop-filter: blur(20px); /* Safari support */
+	-webkit-backdrop-filter: blur(20px);
 }
 .modal-content {
 	backface-visibility: hidden;
@@ -453,19 +463,14 @@ button :hover {
 }
 
 .card-stack-container {
-	position: relative;
 	width: 400px;
 	height: 400px;
 	margin: auto;
-	overflow: hidden;
-}
-.cardstacker-wrapper {
-	position: relative;
 }
 
 .cardstacker-cardwrap {
 	position: relative;
-	list-style: none;
+
 	padding: 0;
 	margin: 0;
 }
@@ -479,7 +484,7 @@ button :hover {
 	background-size: cover;
 	background-position: center;
 	display: block;
-	cursor: auto; /* default */
+	cursor: auto;
 }
 
 .cardstacker-card--draggable {
@@ -496,9 +501,6 @@ button :hover {
 	user-select: none;
 }
 
-/* Hamburgermenu */
-
-/* Animate into an "X" */
 .hamburger.open span:nth-child(1) {
 	transform: rotate(45deg) translate(5px, 5px);
 }
@@ -508,8 +510,6 @@ button :hover {
 .hamburger.open span:nth-child(3) {
 	transform: rotate(-45deg) translate(6px, -6px);
 }
-
-/* Dropdown Menu */
 
 .menu a {
 	padding: 10px;
@@ -524,13 +524,10 @@ button :hover {
 	border-radius: 4px;
 }
 
-/* Container (no z-index here) */
 .mobile-menu {
 	position: relative;
-	/* remove z-index here */
 }
 
-/* Hamburger Button */
 .hamburger {
 	position: fixed;
 	top: 15px;
@@ -543,7 +540,7 @@ button :hover {
 	background: none;
 	border: none;
 	cursor: pointer;
-	z-index: 10000; /* enough to stay on top */
+	z-index: 10000;
 }
 
 .hamburger span {
@@ -555,7 +552,6 @@ button :hover {
 	transition: 0.3s ease;
 }
 
-/* Dropdown Menu */
 .menu {
 	display: none;
 	position: fixed;
@@ -568,7 +564,7 @@ button :hover {
 	font-size: 5.7vw;
 	text-align: center;
 	flex-direction: column;
-	z-index: 99999; /* works now */
+	z-index: 99999;
 }
 
 .menu.show {
@@ -585,7 +581,6 @@ button :hover {
 		display: none;
 	}
 }
-/*Hamburger menu end */
 
 @media only screen and (max-width: 600px) {
 	.wrapper {
@@ -743,7 +738,7 @@ button :hover {
 	}
 	.modal {
 		position: fixed;
-		z-index: 100000;
+		z-index: 99999999999999999999999999999999;
 		left: 0;
 		top: 0;
 		width: 100%;
@@ -751,13 +746,14 @@ button :hover {
 		overflow: auto;
 		background-color: rgba(0, 0, 0, 0.4);
 		backdrop-filter: blur(20px);
-		-webkit-backdrop-filter: blur(20px); /* Safari support */
+		-webkit-backdrop-filter: blur(20px);
 	}
 	.modal-content {
 		border-radius: 3vw;
 		width: 100%;
 		max-width: 85vw;
 		margin-left: 3.5vw;
+		z-index: 99999999999999999999;
 	}
 
 	.modal-content h1 {
